@@ -1,15 +1,263 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
-<title>Jacaúna Conceito</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JACAUNA CONCEITO</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+}
+
+header{
+background:#111;
+padding:20px 30px;
+border-bottom:2px solid #1fa34a;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#1fa34a;
+}
+
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,.2),
+rgba(0,0,0,.8)
+);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+margin:auto;
+}
+
+.botao{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:#1fa34a;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+.categoria{
+padding:50px 20px;
+}
+
+.categoria h2{
+font-size:35px;
+margin-bottom:25px;
+color:#1fa34a;
+}
+
+.cards{
+display:flex;
+gap:20px;
+overflow-x:auto;
+padding-bottom:20px;
+}
+
+.cards::-webkit-scrollbar{
+height:8px;
+}
+
+.cards::-webkit-scrollbar-thumb{
+background:#1fa34a;
+border-radius:20px;
+}
+
+.card{
+min-width:280px;
+background:#181818;
+border-radius:15px;
+overflow:hidden;
+position:relative;
+}
+
+.rank{
+position:absolute;
+top:10px;
+left:10px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#1fa34a;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.info{
+padding:15px;
+}
+
+.nome{
+font-size:22px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.preco{
+margin-top:5px;
+}
+
+.pix{
+color:#1fa34a;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:40px;
+margin-top:40px;
+background:#111;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
+</style>
+
 </head>
 
-<body style="background:black;color:white;text-align:center;font-family:Arial;padding:100px;">
+<body>
 
-<h1>JACAÚNA CONCEITO</h1>
+<header>
 
-<p>Site em construção.</p>
+<div class="logo">
+JACAUNA CONCEITO
+</div>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+Os móveis mais desejados
+</h1>
+
+<p>
+Inspiração, design e conforto para transformar ambientes.
+</p>
+
+<a class="botao" href="https://wa.me/5582000000000">
+Falar no WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section class="categoria">
+
+<h2>🏆 Top Sofás</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="rank">1</div>
+
+<img src="https://via.placeholder.com/500x500">
+
+<div class="info">
+
+<div class="nome">
+Sofá Dubai
+</div>
+
+<div class="preco pix">
+Pix: R$ 2.490
+</div>
+
+<div class="preco">
+5x de R$ 498
+</div>
+
+<div class="preco">
+12x de R$ 207,50
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="categoria">
+<h2>🏆 Top Mesas</h2>
+<div class="cards"></div>
+</section>
+
+<section class="categoria">
+<h2>🏆 Top Cadeiras</h2>
+<div class="cards"></div>
+</section>
+
+<section class="categoria">
+<h2>🏆 Top Painéis</h2>
+<div class="cards"></div>
+</section>
+
+<footer>
+
+Desenvolvido por Nilson Cavalcanti © 2026
+
+</footer>
 
 </body>
 </html>
